@@ -1,6 +1,6 @@
 //
 //  NSMutableDictionary+HJ.m
-//  RuntimeDemo
+//  HJSafe
 //
 //  Created by HeJun<mail@hejun.org> on 15/05/2017.
 //  Copyright © 2017 HeJun. All rights reserved.
@@ -33,7 +33,7 @@
     if (aKey && aKey) {
         [self customRemoveObjectForKey:aKey];
     } else {
-        NSLog(@"remove了一个空，key为%@",aKey);
+        NSLog(@"remove了一个空值，key为%@",aKey);
     }
 }
 //dic["key"] = value
@@ -41,7 +41,7 @@
     if (obj && key) {
         [self customSetObject:obj forKeyedSubscript:key];
     } else {
-        NSLog(@"setObject了一个空，key为%@",key);
+        NSLog(@"setObject了一个空值，key为%@",key);
     }
 }
 //[dic setvalue forkey];
@@ -49,7 +49,7 @@
     if (anObject && aKey) {
         [self customSetObject:anObject forKey:aKey];
     } else {
-        NSLog(@"setObject了一个空，key为%@",aKey);
+        NSLog(@"setObject了一个空值，key为%@",aKey);
     }
 }
 #endif

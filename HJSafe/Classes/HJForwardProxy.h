@@ -1,6 +1,6 @@
 //
 //  HJForwardProxy.h
-//  RuntimeDemo
+//  HJSafe
 //
 //  Created by HeJun<mail@hejun.org> on 23/05/2017.
 //  Copyright © 2017 HeJun. All rights reserved.

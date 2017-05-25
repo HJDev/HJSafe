@@ -1,6 +1,6 @@
 //
 //  NSArray+HJ.m
-//  RuntimeDemo
+//  HJSafe
 //
 //  Created by HeJun<mail@hejun.org> on 15/05/2017.
 //  Copyright © 2017 HeJun. All rights reserved.
