@@ -22,7 +22,7 @@ pod "HJSafe"
 
 ## Author
 
-[HJDev]<mail@hejun.org>
+mail@hejun.org
 
 ## License
 
