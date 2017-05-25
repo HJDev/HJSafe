@@ -1,0 +1,16 @@
+PODS:
+  - HJSafe (0.1.0)
+
+DEPENDENCIES:
+  - HJSafe (from `../`)
+
+EXTERNAL SOURCES:
+  HJSafe:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HJSafe: 9eff9ab7e7bc7b8b117cef5546007e19520606bc
+
+PODFILE CHECKSUM: 01084e36b088207a9fff722797b97094721bfade
+
+COCOAPODS: 1.2.1
