@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HJSafe_Example' do
+  pod 'HJSafe', :path => '../'
+
+  target 'HJSafe_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
