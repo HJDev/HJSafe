@@ -28,7 +28,13 @@
 	NSMethodSignature *ms = [self customMethodSignatureForSelector:aSelector];
 	
 	if (ms == nil) {
-		ms = [HJForwardProxy instanceMethodSignatureForSelector:@selector(missMethodWithClass:target:selector:)];
+		NSString *className = NSStringFromClass([self class]);
+		//修复键盘弹出导致的崩溃问题
+		if (![className hasPrefix:@"UIKeyboard"]) {
+			if (![NSStringFromSelector(aSelector) hasPrefix:@"generateCandidatesWithKeyboardState"]) {
+				ms = [HJForwardProxy instanceMethodSignatureForSelector:@selector(missMethodWithClass:target:selector:)];
+			}
+		}
 	}
 	
 	return ms;
