@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		131FD1266D92FAF171D516E8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		19B552AD3626127A3EF25E7F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		131FD1266D92FAF171D516E8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		19B552AD3626127A3EF25E7F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3CBC383D78E06FB0293068D7 /* Pods-HJSafe_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJSafe_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HJSafe_Example/Pods-HJSafe_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5DBE02F6FBB3BA28B042EF2C /* Pods-HJSafe_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJSafe_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HJSafe_Tests/Pods-HJSafe_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* HJSafe_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJSafe_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +63,7 @@
 		6151244D7FB4E6258A04A250 /* Pods_HJSafe_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HJSafe_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D0326A5E8B6C61D6F7D3EA9E /* HJSafe.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HJSafe.podspec; path = ../HJSafe.podspec; sourceTree = "<group>"; };
+		D0326A5E8B6C61D6F7D3EA9E /* HJSafe.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HJSafe.podspec; path = ../HJSafe.podspec; sourceTree = "<group>"; };
 		D9C333D827DA93216FEA43B4 /* Pods-HJSafe_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJSafe_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HJSafe_Example/Pods-HJSafe_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DBD067EB1BE04342939E9D70 /* Pods-HJSafe_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJSafe_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HJSafe_Tests/Pods-HJSafe_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DCC687829350E23D8513E666 /* Pods_HJSafe_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HJSafe_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -250,6 +250,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "mail@hejun.org";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = UVTAS8R4A5;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -479,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -512,7 +515,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -524,11 +527,12 @@
 			baseConfigurationReference = 3CBC383D78E06FB0293068D7 /* Pods-HJSafe_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UVTAS8R4A5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HJSafe/HJSafe-Prefix.pch";
 				INFOPLIST_FILE = "HJSafe/HJSafe-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.hejun.HJSafe-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -539,11 +543,12 @@
 			baseConfigurationReference = D9C333D827DA93216FEA43B4 /* Pods-HJSafe_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UVTAS8R4A5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HJSafe/HJSafe-Prefix.pch";
 				INFOPLIST_FILE = "HJSafe/HJSafe-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.hejun.HJSafe-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/HJDev/HJSafe.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'HJDev' => 'mail@hejun.org' }
+  s.author           = { 'HJDev' => 'https://www.teamleader.cn' }
   s.source           = { :git => 'https://github.com/HJDev/HJSafe.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://www.teamleader.cn'
 
