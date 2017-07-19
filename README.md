@@ -1,6 +1,6 @@
 # HJSafe
 
-[![CI Status](http://img.shields.io/travis/mail@hejun.org/HJSafe.svg?style=flat)](https://travis-ci.org/mail@hejun.org/HJSafe)
+[![CI Status](http://img.shields.io/travis/HJDev/HJSafe.svg?style=flat)](https://travis-ci.org/HJDev/HJSafe)
 [![Version](https://img.shields.io/cocoapods/v/HJSafe.svg?style=flat)](http://cocoapods.org/pods/HJSafe)
 [![License](https://img.shields.io/cocoapods/l/HJSafe.svg?style=flat)](http://cocoapods.org/pods/HJSafe)
 [![Platform](https://img.shields.io/cocoapods/p/HJSafe.svg?style=flat)](http://cocoapods.org/pods/HJSafe)
