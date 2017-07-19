@@ -5,11 +5,13 @@
 osx_image: xcode8.0
 language: objective-c
 xcode_sdk: iphonesimulator10.0
+xcode_workspace: Example/HJSafe.xcworkspace
+xcode_schemes: HJSafe-Example
 # cache: cocoapods
 # podfile: Example/Podfile
 # before_install:
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
-script:
-- set -o pipefail
-- travis_retry xcodebuild -workspace Example/HJSafe.xcworkspace -scheme "HJSafe-Example" -destination "platform=iOS Simulator,name=iPhone 6" | xcpretty
+#script:
+#- set -o pipefail
+#- travis_retry xcodebuild -workspace Example/HJSafe.xcworkspace -scheme "HJSafe-Example" -destination "platform=iOS Simulator,name=iPhone 6" | xcpretty
